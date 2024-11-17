@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+#navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-brandt {
+    font-size: 2.5em;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+#navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#navbar-nav #nav-item {
+    margin-right: 20px;
+}
+
+#navbar-nav #nav-link {
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+#navbar-nav #nav-link:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+#cart {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#cart h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#total {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#total p {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+#checkout {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#checkout:hover {
+    background-color: #ff9900;
+}
+#footer {
+    background-color: black;
+    text-align: center;
+  }
+  #footer #designer {
+    color: white;
+    font-weight: 800;
+    font-size: large;
+  }
+  #footer p {
+    color: white;
+    font-weight: 800;
+    font-size: large;
+  }
