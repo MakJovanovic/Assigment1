@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f9f9f9;
 }
+
 nav {
     background-color: #333;
     padding: 10px 0;
@@ -51,6 +52,24 @@ nav {
     text-decoration: underline;
 }
 
+#theme-switcher {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#theme-switcher:hover {
+    background-color: #e6b800;
+    color: #fff;
+}
+
 #cart {
     max-width: 1200px;
     margin: 40px auto;
@@ -62,7 +81,6 @@ nav {
     font-size: 2.5em;
     margin-bottom: 40px;
 }
-
 
 table {
     width: 100%;
@@ -112,17 +130,77 @@ tbody tr:nth-child(even) {
 #checkout:hover {
     background-color: #ff9900;
 }
+
 #footer {
     background-color: black;
     text-align: center;
-  }
-  #footer #designer {
+}
+
+#footer #designer {
     color: white;
     font-weight: 800;
     font-size: large;
-  }
-  #footer p {
+}
+
+#footer p {
     color: white;
     font-weight: 800;
     font-size: large;
-  }
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme nav {
+    background-color: #555;
+}
+
+body.dark-theme #navbar-brandt,
+body.dark-theme #nav-link {
+    color: #fff;
+}
+
+body.dark-theme #nav-link:hover {
+    color: #ffcc00;
+}
+
+body.dark-theme #cart-section {
+    background-color: #444;
+}
+
+body.dark-theme table {
+    background-color: #555;
+}
+
+body.dark-theme th, 
+body.dark-theme td {
+    color: #fff;
+}
+
+body.dark-theme th {
+    background-color: #666;
+}
+
+body.dark-theme tbody tr:nth-child(even) {
+    background-color: #444;
+}
+
+body.dark-theme #total {
+    color: #fff;
+}
+
+body.dark-theme #checkout {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+body.dark-theme #footer {
+    background-color: #555;
+}
+
+body.dark-theme #footer p,
+body.dark-theme #footer #designer {
+    color: #fff;
+}

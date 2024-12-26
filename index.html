@@ -20,6 +20,7 @@
                 <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
             </ul>
+            <button id="theme-switcher">Switch Theme</button>
         </div>
     </nav>
 
@@ -41,27 +42,37 @@
         <h2>Our Partner Clubs</h2>
         <div class="club">
             <a href="https://fkzeljeznicar.ba/" target="_blank">
-                <img src="zeljo1.png" alt="Club 1" class="club-image"alt="No internet connection">
+                <img src="zeljo1.png" alt="Club 1" class="club-image">
             </a>
             <p>Club 1</p>
         </div>
         <div class="club">
             <a href="https://hajduk.hr/" target="_blank">
-                <img src="hajduk.jfif" alt="Club 2" class="club-image" alt="No internet connection">
+                <img src="hajduk.jfif" alt="Club 2" class="club-image">
             </a>
             <p>Club 2</p>
         </div>
     </section>
+
     <section class="video">
         <h2>Watch Our Training Video</h2>
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/yj0dfUV35e8?si=7uqDDrxfh4eRB8Re" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
-<footer class="footer">
-    <br>
-    <p>Copyright &copy;2024; Designed by <span class="designer">Mak Jovanovic, Foundations of Web Development</span></p>
-    <br>
-</footer>
+
+    <section class="weather">
+        <h2>Current Weather</h2>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button id="get-weather" class="orange-button">Get Weather</button>
+        <p id="weather-data"></p>
+        <p id="error-message" style="color: red;"></p>
+    </section>
+
+    <footer class="footer">
+        <p>Copyright &copy;2024; Designed by <span class="designer">Mak Jovanovic, Foundations of Web Development</span></p>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
