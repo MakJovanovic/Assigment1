@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const themeSwitcher = document.getElementById('theme-switcher');
-    themeSwitcher.addEventListener('click', function() {
-        document.body.classList.toggle('dark-theme');
-    });
 
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modal-img');
@@ -44,4 +39,3 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-});

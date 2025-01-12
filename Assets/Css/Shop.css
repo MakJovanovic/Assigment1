@@ -275,3 +275,11 @@ body.dark-theme .product .add-to-cart {
 body.dark-theme .product .view-more {
     color: #ffcc00;
 }
+nav a.active {
+    font-weight: bold;
+    color: rgb(255, 238, 0); 
+}
+
+body.dark-theme .nav-link:hover {
+    color: #ffcc00;
+}

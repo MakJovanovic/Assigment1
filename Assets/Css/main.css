@@ -1,15 +1,14 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
 }
 
 nav {
     background-color: #333;
     padding: 10px 0;
 }
-
 .navbar {
     max-width: 1200px;
     margin: 0 auto;
@@ -52,7 +51,8 @@ nav {
     text-decoration: underline;
 }
 
-#theme-switcher {
+#theme-switcher,
+.orange-button {
     background-color: #ffcc00;
     border: none;
     padding: 10px 20px;
@@ -65,94 +65,117 @@ nav {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#theme-switcher:hover {
+#theme-switcher:hover,
+.orange-button:hover {
     background-color: #e6b800;
     color: #fff;
 }
 
-.contact-section {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
+.hero {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.contact-section h2 {
-    font-size: 2.5em;
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.why-best {
+    padding: 40px;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.why-best h2 {
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
-.contact-section p {
+.why-best p {
     font-size: 1.2em;
-}
-
-.contact-link {
-    color: #ffcc00;
-    font-weight: bold;
-    font-size: 1.3em;
-    text-decoration: none;
-}
-
-.contact-link:hover {
+    line-height: 1.5;
     color: #333;
-    text-decoration: underline;
 }
 
-.accordion-section {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.clubs {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f1f1f1;
+}
+
+.club {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.club-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
-.accordion {
-    background-color: #f9f9f9;
-    color: #333;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: background-color 0.4s ease;
+.club p {
+    margin-top: 10px;
     font-size: 1.2em;
 }
 
-.accordion:hover,
-.accordion.active {
-    background-color: #ffcc00;
-    color: #333;
+.video {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
 }
 
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    border-top: none;
-    font-size: 1.1em;
+.video-container {
+    margin-top: 20px;
+}
+
+iframe {
+    border: none;
+}
+
+.weather {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.weather input {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.weather button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.weather button:hover {
+    background-color: #e6b800;
 }
 
 .footer {
     background-color: black;
     text-align: center;
+    padding: 20px;
+    color: white;
 }
 
 .footer .designer {
-    color: white;
-    font-weight: 800;
-    font-size: large;
-}
-
-.footer p {
-    color: white;
-    font-weight: 800;
-    font-size: large;
+    font-weight: bold;
 }
 
 body.dark-theme {
@@ -173,33 +196,29 @@ body.dark-theme .nav-link:hover {
     color: #ffcc00;
 }
 
-body.dark-theme .contact-section,
-body.dark-theme .accordion-section {
+body.dark-theme .why-best {
     background-color: #444;
-    color: #fff;
 }
 
-body.dark-theme .accordion {
+body.dark-theme .clubs {
     background-color: #555;
-    color: #fff;
 }
 
-body.dark-theme .accordion:hover,
-body.dark-theme .accordion.active {
-    background-color: #ffcc00;
-    color: #333;
-}
-
-body.dark-theme .panel {
-    background-color: #555;
-    color: #fff;
+body.dark-theme .video {
+    background-color: #444;
 }
 
 body.dark-theme .footer {
     background-color: #555;
 }
 
-body.dark-theme .footer p,
-body.dark-theme .footer .designer {
-    color: #fff;
+body.dark-theme .weather {
+    background-color: #444;
+}
+nav a.active {
+    font-weight: bold;
+    color: rgb(255, 238, 0); 
+}
+body.dark-theme .nav-link:hover {
+    color: #ffcc00;
 }

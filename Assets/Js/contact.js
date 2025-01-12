@@ -1,8 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const themeSwitcher = document.getElementById('theme-switcher');
-    themeSwitcher.addEventListener('click', function() {
-        document.body.classList.toggle('dark-theme');
-    });
+function contact_form() {
 
     const accordions = document.querySelectorAll('.accordion');
     accordions.forEach(accordion => {
@@ -16,4 +12,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-});
+}

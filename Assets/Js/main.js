@@ -1,10 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const themeSwitcher = document.getElementById('theme-switcher');
-    themeSwitcher.addEventListener('click', function() {
-        document.body.classList.toggle('dark-theme');
-    });
-
-    async function getWeather() {
+     async function getWeather() {
         const city = document.getElementById('city').value;
         const weatherDataElem = document.getElementById('weather-data');
         const errorMessageElem = document.getElementById('error-message');
@@ -23,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const data = await response.json();
             const weatherDescription = data.weather[0].description;
-            const temperature = (data.main.temp - 273.15).toFixed(2); 
+            const temperature = (data.main.temp - 273.15).toFixed(2);
 
             weatherDataElem.textContent = `Weather: ${weatherDescription}, Temperature: ${temperature}°C`;
         } catch (error) {
@@ -32,4 +26,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('get-weather').addEventListener('click', getWeather);
-});

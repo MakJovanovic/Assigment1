@@ -1,9 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const themeSwitcher = document.getElementById('theme-switcher');
-    themeSwitcher.addEventListener('click', function() {
-        document.body.classList.toggle('dark-theme');
-    });
-
+function js_cart() {
     const cartItems = [
         { product: 'Gloves', price: 79.99, quantity: 1 },
         { product: 'T-Shirt', price: 59.99, quantity: 1 },
@@ -14,6 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function loadCartItems() {
         const cartTableBody = document.getElementById('cart-items');
+        if (!cartTableBody) {
+            console.error('Cart table body not found');
+            return;
+        }
         cartTableBody.innerHTML = '';
 
         let totalAmount = 0;
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cartItems.forEach((item, index) => {
             const itemTotal = item.price * item.quantity;
             totalAmount += itemTotal;
-
+            console.log ("test")
             const row = document.createElement('tr');
 
             row.innerHTML = `
@@ -34,7 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     <button class="btn btn-danger btn-delete" data-index="${index}">Delete</button>
                 </td>
             `;
-
+        const totalAmountElement = document.getElementById('total-amount');
+        if (totalAmountElement) {
+            totalAmountElement.textContent = totalAmount.toFixed(2);
+        } else {
+            console.error('Total amount element not found');
+        }
             cartTableBody.appendChild(row);
         });
 
@@ -73,4 +77,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     loadCartItems();
-});
+}
